@@ -55,14 +55,7 @@ def main():
     check_creating_pet_image_labels(results)
 
 
-    # TODO 3: Define classify_images function within the file classify_images.py
-    # Once the classify_images function has been defined replace first 'None' 
-    # in the function call with in_arg.dir and replace the last 'None' in the
-    # function call with in_arg.arch  Once you have done the replacements your
-    # function call should look like this: 
-    #             classify_images(in_arg.dir, results, in_arg.arch)
-    # Creates Classifier Labels with classifier function, Compares Labels, 
-    # and adds these results to the results dictionary - results
+    # Third function
     classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results    
@@ -77,7 +70,7 @@ def main():
     # Adjusts the results dictionary to determine if classifier correctly 
     # classified images as 'a dog' or 'not a dog'. This demonstrates if 
     # model can correctly classify dog images as dogs (regardless of breed)
-    adjust_results4_isadog(results, None)
+    adjust_results4_isadog(results, in_arg.dogfile)
 
     # Function that checks Results Dictionary for is-a-dog adjustment using results
     check_classifying_labels_as_dogs(results)
