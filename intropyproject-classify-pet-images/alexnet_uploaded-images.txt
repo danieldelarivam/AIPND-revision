@@ -1,0 +1,74 @@
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    bear_01.jpg  label:                       bear
+ 2 key:          Pug_portrait copy.jpg  label:                        pug
+ 3 key:          shoes_painting_01.jpg  label:             shoes painting
+ 4 key:               Pug_portrait.jpg  label:                        pug
+
+     MATCH:
+
+                   bear_01.jpg: 
+Real:                       bear   Classifier: brown bear, bruin, ursus arctos
+
+         Pug_portrait copy.jpg: 
+Real:                        pug   Classifier:                   pug, pug-dog
+
+              Pug_portrait.jpg: 
+Real:                        pug   Classifier:                   pug, pug-dog
+
+ NOT A MATCH:
+
+         shoes_painting_01.jpg: 
+Real:             shoes painting   Classifier:     assault rifle, assault gun
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+                   bear_01.jpg: 
+Real:                       bear   Classifier: brown bear, bruin, ursus arctos  
+PetLabelDog: 0  ClassLabelDog: 0
+
+         Pug_portrait copy.jpg: 
+Real:                        pug   Classifier:                   pug, pug-dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Pug_portrait.jpg: 
+Real:                        pug   Classifier:                   pug, pug-dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+         shoes_painting_01.jpg: 
+Real:             shoes painting   Classifier:     assault rifle, assault gun  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match 75.0
+pct_correct_dogs 100.0
+pct_correct_breed 100.0
+pct_correct_notdogs 100.0
+
+** Total Elapsed Runtime: 0:0:0
